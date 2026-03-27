@@ -5,7 +5,7 @@ class Program
 {
     static void Main()
     {
-        Console.WriteLine("Podaj liczbe:");
+        Console.WriteLine("Podaj liczbę (int):");
         string input = Console.ReadLine();
 
         if (string.IsNullOrWhiteSpace(input))
