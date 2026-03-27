@@ -7,11 +7,6 @@ class Program
     {
         Console.WriteLine("Podaj liczbe:");
         string input = Console.ReadLine();
-	if (string.IsNullOrWhiteSpace(input))
-	{
-    		Console.WriteLine("Błąd: pusty input");
- 		   return;
-	}
 
         if (string.IsNullOrWhiteSpace(input))
         {
@@ -32,6 +27,9 @@ class Program
 
         int max = CalculateMax(numbers);
         Console.WriteLine($"Max: {max}");
+
+        int min = CalculateMin(numbers);
+        Console.WriteLine($"Min: {min}");
     }
 
     static double CalculateAverage(int[] values)
@@ -44,5 +42,11 @@ class Program
     {
         if (values.Length == 0) return 0;
         return values.Max();
+    }
+
+    static int CalculateMin(int[] values)
+    {
+        if (values.Length == 0) return 0;
+        return values.Min();
     }
 }
