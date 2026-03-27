@@ -1,1 +1,2 @@
-﻿Console.WriteLine("Hello, World!");
+﻿Console.WriteLine("Podaj liczbe:");
+string input = Console.ReadLine();
