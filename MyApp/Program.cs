@@ -7,6 +7,11 @@ class Program
     {
         Console.WriteLine("Podaj liczbe:");
         string input = Console.ReadLine();
+	if (string.IsNullOrWhiteSpace(input))
+	{
+    		Console.WriteLine("Błąd: pusty input");
+ 		   return;
+	}
 
         if (!int.TryParse(input, out int number))
         {
